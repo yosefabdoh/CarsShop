@@ -1,0 +1,37 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="main.master.cs" Inherits="CarsShop.main" %>
+
+<%@ Register Src="~/Navbar.ascx" TagPrefix="uc1" TagName="Navbar" %>
+<%@ Register Src="~/header.ascx" TagPrefix="uc1" TagName="header" %>
+<%@ Register Src="~/Footer.ascx" TagPrefix="uc1" TagName="Footer" %>
+
+
+
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>المعرض الالكتروني للسيارات</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="/assets/css/Contact-Form-Clean.css" rel="stylesheet" />
+    <link href="/assets/css/styles.css" rel="stylesheet" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <uc1:header runat="server" ID="header" />
+            <uc1:Navbar runat="server" ID="Navbar" />
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+            </asp:ContentPlaceHolder>
+            <uc1:Footer runat="server" id="Footer" />
+        </div>
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/popper.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+    </form>
+</body>
+</html>

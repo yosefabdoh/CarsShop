@@ -1,0 +1,117 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="CPms.master.cs" Inherits="CarsShop.Cpanal.CPms" %>
+
+<%@ Register Src="~/Cpanal/Header.ascx" TagPrefix="uc1" TagName="Header" %>
+<%@ Register Src="~/Cpanal/NavCP.ascx" TagPrefix="uc1" TagName="NavCP" %>
+
+
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title >لوحة التحكم</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <!-- BootStrap -->
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../assets/css/font-awesome.min.css" rel="stylesheet" />
+    <style>
+        #profile:hover {
+            background: #83c925;
+        }
+
+        #register:hover {
+            background: #83c925;
+        }
+
+        #login:hover {
+            background: #5BBCEC;
+        }
+
+        #logout:hover {
+            background: #FF4518;
+        }
+
+        .fa {
+            padding: 11px 15px;
+        }
+
+        .toolbar i:hover {
+            color: white;
+            border-radius: 30px;
+        }
+
+        .fa-facebook:hover {
+            background: #0083C9;
+            border-radius: 30px;
+        }
+
+        .fa-linkedin:hover {
+            background: rgb(1, 39, 59);
+            border-radius: 30px;
+        }
+
+        .fa-twitter:hover {
+            background: #5BBCEC;
+            border-radius: 30px;
+
+        }
+
+        b4.d .fa-linkedin:hover {
+            background: #FF4518;
+       border-radius: 30px;
+            }
+
+        .fa-instagram:hover {
+            background: #90C9DC;
+            border-radius: 30px;
+        }
+
+        .fa-google-plus:hover {
+            background: #CE3C2D;
+          
+        }
+
+        .toolbar .social-media .nav-link {
+            padding: 0px;
+        }
+    
+    .auto-style1 {
+        width: 231px;
+        height: 63px;
+    }
+    
+    </style>
+
+</head>
+<body>
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+        <div>
+            <!-- header -->
+           
+            <uc1:Header runat="server" id="Header" />
+            <!-- ------------------- -->
+            <uc1:NavCP runat="server" id="NavCP" />
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+
+
+            <!-- footer -->
+
+            <footer class="py-5 bg-dark">
+                <div class="container">
+                    <p class="m-0 text-center text-white ">Copyright &copy; Programming Team</p>
+                </div>
+            </footer>
+
+            <!-- ------------------- -->
+
+
+        </div>
+        <script src="../assets/js/jquery.min.js"></script>
+        <script src="../assets/js/popper.min.js"></script>
+        <script src="../assets/js/bootstrap.min.js"></script>
+    </form>
+</body>
+</html>
