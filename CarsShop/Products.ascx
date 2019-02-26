@@ -149,8 +149,9 @@
                                         <asp:Label Text='<%# Eval("model_number") %>' CssClass="btn btn-sm btn-outline-secondary" runat="server" ID="model_numberLabel" />
 
                                     </div>
-                                    <small class="text-muted"> <asp:Label Text='<%# Eval("ad_date") %>' runat="server" ID="ad_dateLabel" /></small>
-                                
+                                    <small class="text-muted">
+                                        <asp:Label Text='<%# Eval("ad_date") %>' runat="server" ID="ad_dateLabel" /></small>
+
 
                                 </div>
                 </ItemTemplate>

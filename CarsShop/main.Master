@@ -8,7 +8,8 @@
 
 
 <!DOCTYPE html>
-
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <html>
 <head runat="server">
     <title>المعرض الالكتروني للسيارات</title>
@@ -23,7 +24,6 @@
     <form id="form1" runat="server">
         <div>
             <uc1:header runat="server" ID="header" />
-            <uc1:Navbar runat="server" ID="Navbar" />
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
 
             </asp:ContentPlaceHolder>
