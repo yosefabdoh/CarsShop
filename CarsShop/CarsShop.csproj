@@ -73,22 +73,25 @@
     <Content Include="ads\AddAds.aspx" />
     <Content Include="ads\addCarAds.ascx" />
     <Content Include="ads\addCarDetails.ascx" />
+    <Content Include="Cpanal\AccountDetails.aspx" />
+    <Content Include="Cpanal\AccountList.ascx" />
+    <Content Include="Cpanal\AccountShow.aspx" />
     <Content Include="assets\css\ar.css" />
     <Content Include="assets\css\bootstrap.min.css" />
+    <Content Include="assets\css\Contact-Form-Clean.css" />
+    <Content Include="assets\css\desktop.css" />
     <Content Include="assets\css\font-awesome.min.css" />
     <Content Include="assets\css\main.css" />
     <Content Include="assets\css\offcanvas.css" />
     <Content Include="assets\css\sb-admin.css" />
     <Content Include="assets\css\signin.css" />
+    <Content Include="assets\css\styles.css" />
     <Content Include="assets\fonts\fontawesome-webfont.svg" />
     <Content Include="assets\js\bootstrap.min.js" />
     <Content Include="assets\js\holder.min.js" />
     <Content Include="assets\js\jquery.min.js" />
     <Content Include="assets\js\main.js" />
     <Content Include="assets\js\popper.min.js" />
-    <Content Include="Cpanal\AccountDetails.aspx" />
-    <Content Include="Cpanal\AccountList.ascx" />
-    <Content Include="Cpanal\AccountShow.aspx" />
     <Content Include="Cpanal\CarMarketControl.aspx" />
     <Content Include="Cpanal\Default.aspx" />
     <Content Include="Cpanal\Header.ascx" />
@@ -253,14 +256,14 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Cpanal\CPms.Master" />
+    <Content Include="main.Master" />
+    <Content Include="libman.json" />
     <Content Include="assets\fonts\flat-jooza.ttf" />
     <Content Include="assets\fonts\fontawesome-webfont.eot" />
     <Content Include="assets\fonts\fontawesome-webfont.ttf" />
     <Content Include="assets\fonts\fontawesome-webfont.woff" />
     <Content Include="assets\fonts\fontawesome-webfont.woff2" />
     <Content Include="assets\fonts\FontAwesome.otf" />
-    <Content Include="main.Master" />
-    <Content Include="libman.json" />
     <None Include="packages.config" />
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Properties\PublishProfiles\FolderProfile1.pubxml" />
