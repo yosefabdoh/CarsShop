@@ -71,7 +71,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="ads\AddAds.aspx" />
-    <Content Include="ads\addCarAds.ascx" />
     <Content Include="ads\addCarDetails.ascx" />
     <Content Include="Cpanal\AccountDetails.aspx" />
     <Content Include="Cpanal\AccountList.ascx" />
@@ -106,24 +105,19 @@
     <Content Include="login.aspx" />
     <Content Include="Navbar.ascx" />
     <Content Include="Products.ascx" />
+    <Content Include="Register.aspx" />
     <Content Include="Slider.ascx" />
     <Content Include="Web.config" />
     <Content Include="WebForm1.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdsClass.cs" />
     <Compile Include="ads\AddAds.aspx.cs">
       <DependentUpon>AddAds.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="ads\AddAds.aspx.designer.cs">
       <DependentUpon>AddAds.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="ads\addCarAds.ascx.cs">
-      <DependentUpon>addCarAds.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="ads\addCarAds.ascx.designer.cs">
-      <DependentUpon>addCarAds.ascx</DependentUpon>
     </Compile>
     <Compile Include="ads\addCarDetails.ascx.cs">
       <DependentUpon>addCarDetails.ascx</DependentUpon>
@@ -132,6 +126,7 @@
     <Compile Include="ads\addCarDetails.ascx.designer.cs">
       <DependentUpon>addCarDetails.ascx</DependentUpon>
     </Compile>
+    <Compile Include="Class1.cs" />
     <Compile Include="Cpanal\AccountDetails.aspx.cs">
       <DependentUpon>AccountDetails.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -239,6 +234,13 @@
       <DependentUpon>Products.ascx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Slider.ascx.cs">
       <DependentUpon>Slider.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

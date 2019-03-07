@@ -12,50 +12,41 @@ namespace CarsShop.ads
         protected void Page_Load(object sender, EventArgs e)
         {
 
-            AddUserControlInPage(); 
+            //AddUserControlInPage(); 
 
 
         }
-        public void AddUserControlInPage()
-        {
-            this.PlaceHolderUserControl.Controls.Clear();
-            string path = string.Empty;
-            if (ViewState["UC"] == null)
-            {
-                // Please change the path as your own to load the WebUserControl dynamically.
-                path = "~/ads/addCarAds.ascx";
-            }
-            else
-            {
-                switch (ViewState["UC"].ToString())
-                {
-                    case "first":
+        //public void AddUserControlInPage()
+        //{
+        //    this.PlaceHolderUserControl.Controls.Clear();
+        //    string path = string.Empty;
+        //    if (ViewState["UC"] == null)
+        //    {
+        //        // Please change the path as your own to load the WebUserControl dynamically.
+        //        path = "~/ads/addCarAds.ascx";
+        //    }
+        //    else
+        //    {
+        //        switch (ViewState["UC"].ToString())
+        //        {
+        //            case "first":
 
-                        // Please change the path as your own to load the WebUserControl dynamically.
-                        path = "~/ads/addCarAds.ascx";
-                        break;
-                    case "second":
+        //                // Please change the path as your own to load the WebUserControl dynamically.
+        //                path = "~/ads/addCarAds.ascx";
+        //                break;
+        //            case "second":
 
-                        // Please change the path as your own to load the WebUserControl dynamically.
-                        path = "~/ads/addCarDetails.ascx";
-                        break;
-                }
-            }
-            Page p = new Page();
-            Control uc = p.LoadControl(path);
-            this.PlaceHolderUserControl.Controls.Add(uc);
-        }
+        //                // Please change the path as your own to load the WebUserControl dynamically.
+        //                path = "~/ads/addCarDetails.ascx";
+        //                break;
+        //        }
+        //    }
+        //    Page p = new Page();
+        //    Control uc = p.LoadControl(path);
+        //    this.PlaceHolderUserControl.Controls.Add(uc);
+        //}
 
 
-        protected void btn1_Click(object sender, EventArgs e)
-        {   
-            ViewState["UC"] = "first";
-            AddUserControlInPage();
-        }
-        protected void Button2_Click(object sender, EventArgs e)
-        {
-            ViewState["UC"] = "second";
-            AddUserControlInPage();
-        }
+      
     }
 }

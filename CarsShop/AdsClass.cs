@@ -9,35 +9,32 @@ using System.Web.Security;
 
 namespace CarsShop
 {
-    public class Loginclass
+    public class AdsClass
     {
-        public Loginclass()
+        public AdsClass()
         {
 
         }
-        public DataTable dologin(string username, string password)
+        public DataTable AdsSessions(string Adsid, string Carid)
         {
             string constring = WebConfigurationManager.ConnectionStrings["CarDatabaseConnectionString"].ToString();
 
             using (SqlConnection conn = new SqlConnection(constring))
             {
-                string sql = "select * from acount_user where user_name =@username and password=@password and user_type_id = 1002";
+                string sql = "select * from adverisement where da_id =@adsid and car_id=@carid";
                 SqlCommand cmd = new SqlCommand(sql, conn);
-                string EnPassord = FormsAuthentication.HashPasswordForStoringInConfigFile(password, "SHA1");
-                SqlParameter parusername = new SqlParameter("@username", username);
-                SqlParameter parpassword = new SqlParameter("@password", EnPassord);
-                cmd.Parameters.Add(parusername);
-                cmd.Parameters.Add(parpassword);
+
+                SqlParameter adsid = new SqlParameter("@adsid", Adsid);
+                SqlParameter carid = new SqlParameter("@carid", Carid);
+                cmd.Parameters.Add(adsid);
+                cmd.Parameters.Add(carid);
                 SqlDataAdapter adapter = new SqlDataAdapter(cmd);
                 DataTable dt = new DataTable();
                 adapter.Fill(dt);
                 return dt;
 
-
             }
 
         }
-
-
     }
 }

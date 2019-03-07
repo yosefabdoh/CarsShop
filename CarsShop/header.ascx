@@ -109,13 +109,13 @@
             <div class="col-2">
 
 
-                <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+<%--                <asp:UpdatePanel ID="UpdatePanel2" runat="server">
                     <ContentTemplate>
                         <asp:Timer ID="Timer1" runat="server" Interval="1000" OnTick="Timer1_Tick">
                         </asp:Timer>
                         <asp:Label ID="lbldate" runat="server" Text=""></asp:Label>
                     </ContentTemplate>
-                </asp:UpdatePanel>
+                </asp:UpdatePanel>--%>
 
 
             </div>

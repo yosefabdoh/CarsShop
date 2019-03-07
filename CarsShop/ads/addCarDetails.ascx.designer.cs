@@ -13,6 +13,15 @@ namespace CarsShop.ads {
     public partial class addCarDetails {
         
         /// <summary>
+        /// UpdatePanel1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.UpdatePanel UpdatePanel1;
+        
+        /// <summary>
         /// txtAdsTitle control.
         /// </summary>
         /// <remarks>
@@ -20,15 +29,6 @@ namespace CarsShop.ads {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtAdsTitle;
-        
-        /// <summary>
-        /// DropCarState control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropCarState;
         
         /// <summary>
         /// dropbrand control.
@@ -49,15 +49,6 @@ namespace CarsShop.ads {
         protected global::System.Web.UI.WebControls.DropDownList dropcartype;
         
         /// <summary>
-        /// txtPrice control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtPrice;
-        
-        /// <summary>
         /// DropCarModel control.
         /// </summary>
         /// <remarks>
@@ -65,6 +56,24 @@ namespace CarsShop.ads {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList DropCarModel;
+        
+        /// <summary>
+        /// DropCarState control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList DropCarState;
+        
+        /// <summary>
+        /// txtPrice control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtPrice;
         
         /// <summary>
         /// dropGearBox control.
@@ -146,6 +155,24 @@ namespace CarsShop.ads {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList DropColor;
+        
+        /// <summary>
+        /// TxtAdsDetails control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TxtAdsDetails;
+        
+        /// <summary>
+        /// Label1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label1;
         
         /// <summary>
         /// btnbrand control.
