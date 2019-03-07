@@ -21,13 +21,20 @@
     <link href="/assets/css/styles.css" rel="stylesheet" />
 </head>
 <body>
+
     <form id="form1" runat="server">
         <div>
+            <%-- Header --%>
+
             <uc1:header runat="server" ID="header" />
+
+            <%-- -------------- --%>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
 
             </asp:ContentPlaceHolder>
+            <%-- footer --%>
             <uc1:Footer runat="server" id="Footer" />
+            <%-- --------------------- --%>
         </div>
         <script src="assets/js/jquery.min.js"></script>
         <script src="assets/js/popper.min.js"></script>

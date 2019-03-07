@@ -18,6 +18,9 @@ This is the<span style="color: Red"> Second </span>UserControl.
 </style> 
 
 <div class="contact-clean" >
+    <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+        <ContentTemplate>
+
     <section method="post">
             
         <h2 class="text-center">ادخل تفاصيل السيارة </h2>
@@ -31,29 +34,39 @@ This is the<span style="color: Red"> Second </span>UserControl.
 
         </div>
 
-        <%--2 CarState --%>
-        <div class="form-group" dir="rtl">
-
-            <small class="form-text text-secondary">حالة السيارة .</small>
-
-            <asp:DropDownList ID="DropCarState" CssClass="form-control" runat="server"></asp:DropDownList>
-
-        </div>
-
 
         <%--3 brand --%>
         <div class="form-group" dir="rtl">
             <small class="form-text text-secondary"> ماركة السيارة.</small>
-            <asp:DropDownList ID="dropbrand" CssClass="form-control" runat="server"></asp:DropDownList>
+            <asp:DropDownList ID="dropbrand" CssClass="form-control" runat="server" OnSelectedIndexChanged="dropbrand_SelectedIndexChanged" AutoPostBack="True"></asp:DropDownList>
 
         </div>
 
         <%--4 CarType --%>
         <div class="form-group" dir="rtl">
             <small class="form-text text-secondary"> نوع السيارة.</small>
-            <asp:DropDownList ID="dropcartype" CssClass="form-control" runat="server"></asp:DropDownList>
+            <asp:DropDownList ID="dropcartype" CssClass="form-control" runat="server" OnSelectedIndexChanged="dropcartype_SelectedIndexChanged" AutoPostBack="True"></asp:DropDownList>
 
 
+
+        </div>
+
+        <%--6 Model --%>
+        <div class="form-group" dir="rtl">
+            <small class="form-text text-secondary"> الموديل .</small>
+            <asp:DropDownList ID="DropCarModel" CssClass="form-control" runat="server"></asp:DropDownList>
+
+
+
+        </div>
+
+
+        <%--2 CarState --%>
+        <div class="form-group" dir="rtl">
+
+            <small class="form-text text-secondary">حالة السيارة .</small>
+
+            <asp:DropDownList ID="DropCarState" CssClass="form-control" runat="server"></asp:DropDownList>
 
         </div>
 
@@ -64,15 +77,6 @@ This is the<span style="color: Red"> Second </span>UserControl.
 
             <asp:TextBox ID="txtPrice" CssClass="form-control" runat="server"></asp:TextBox>
                        
-        </div>
-
-        <%--6 Model --%>
-        <div class="form-group" dir="rtl">
-            <small class="form-text text-secondary"> الموديل .</small>
-            <asp:DropDownList ID="DropCarModel" CssClass="form-control" runat="server"></asp:DropDownList>
-
-
-
         </div>
 
         <%--7 GearBox --%>
@@ -158,12 +162,13 @@ This is the<span style="color: Red"> Second </span>UserControl.
 
         <%--16 AddtionDetails --%>
         <div class="form-group" dir="rtl" >
-            <textarea class="form-control" rows="14" name="message" placeholder="اضافات اخرى"></textarea>
+            <asp:TextBox ID="TxtAdsDetails" CssClass="form-control" Rows="14" Text="اضافات اخرى" runat="server"></asp:TextBox>
+           <%-- <textarea class="form-control" rows="14" name="message" placeholder="اضافات اخرى"></textarea>--%>
         </div>
         <div class="form-group">
 
-        
-        <form id="fileupload" class="">
+            <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+    <%--    <form id="fileupload" class="">
             <div class="upload-zone">
                 <input type="file" class="custom-file-input" name="files[]" multiple="">
                 <span><span>أضف صور</span></span>
@@ -176,13 +181,16 @@ This is the<span style="color: Red"> Second </span>UserControl.
             <div class="fileupload-buttonbar hide">
                 <input id="start_upload" type="button" class="start disabled" value="تحميل" data-default-value="تحميل" disabled="disabled">
             </div>
-        </form>
+        </form>--%>
       </div>
         <%-- inserting button --%>
         <div class="form-group">
            
-            <asp:Button ID="btnbrand" CssClass="btn btn-primary" runat="server" Text="تأكيد"  />
+            <asp:Button ID="btnbrand" CssClass="btn btn-primary" runat="server" Text="تأكيد" OnClick="btnbrand_Click"  />
 
         </div>
     </section>
+
+        </ContentTemplate>
+    </asp:UpdatePanel>
 </div>

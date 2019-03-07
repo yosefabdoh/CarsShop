@@ -15,7 +15,7 @@ namespace CarsShop
         }
         protected void Timer1_Tick(object sender, EventArgs e)
         {
-            lbldate.Text = System.DateTime.Now.ToString();
+            //lbldate.Text = System.DateTime.Now.ToString();
         }
     }
 }
