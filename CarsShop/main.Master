@@ -12,30 +12,36 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <html>
 <head runat="server">
-    <title>المعرض الالكتروني للسيارات</title>
-    <asp:ContentPlaceHolder ID="head" runat="server">
-    </asp:ContentPlaceHolder>
+    <title>Car Shop - لبيع وشراء السيارات </title>
+
+    <link href="assets/css/jquery.ui.css" rel="stylesheet" />
     <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
     <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
     <link href="/assets/css/Contact-Form-Clean.css" rel="stylesheet" />
+    <%--<link href="/assets/css/styles.css" rel="stylesheet" />--%>
     <link href="/assets/css/styles.css" rel="stylesheet" />
+    <script src="assets/js/util.js"></script>
+    <link href="assets/css/rtl.css" rel="stylesheet" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
 </head>
-<body>
+<body class="large home-page no-sidebar -theme">
 
     <form id="form1" runat="server">
-        <div>
-            <%-- Header --%>
 
-            <uc1:header runat="server" ID="header" />
+        <%-- Header --%>
 
-            <%-- -------------- --%>
-            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        <%--<uc1:header runat="server" ID="header" />--%>
 
-            </asp:ContentPlaceHolder>
-            <%-- footer --%>
-            <uc1:Footer runat="server" id="Footer" />
-            <%-- --------------------- --%>
-        </div>
+        <%-- -------------- --%>
+     
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+                <%-- footer --%>
+                <%--<uc1:Footer runat="server" id="Footer" />--%>
+                <%-- --------------------- --%>
+        
         <script src="assets/js/jquery.min.js"></script>
         <script src="assets/js/popper.min.js"></script>
         <script src="assets/js/bootstrap.min.js"></script>

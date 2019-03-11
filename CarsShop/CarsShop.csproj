@@ -72,6 +72,20 @@
   <ItemGroup>
     <Content Include="ads\AddAds.aspx" />
     <Content Include="ads\addCarDetails.ascx" />
+    <Content Include="assets\css\jquery.ui.css" />
+    <Content Include="assets\css\rtl.css" />
+    <Content Include="assets\img\gallery.png" />
+    <Content Include="assets\img\%402x\gallery2.png" />
+    <Content Include="assets\img\gear.png" />
+    <Content Include="assets\img\mileage.png" />
+    <Content Include="assets\img\price.png" />
+    <Content Include="assets\img\select-arrow.png" />
+    <Content Include="assets\img\why-us-1.png" />
+    <Content Include="assets\img\why-us-2.png" />
+    <Content Include="assets\img\why-us-3.png" />
+    <Content Include="assets\img\year.png" />
+    <Content Include="assets\js\system.lib.js" />
+    <Content Include="assets\js\util.js" />
     <Content Include="Cpanal\AccountDetails.aspx" />
     <Content Include="Cpanal\AccountList.ascx" />
     <Content Include="Cpanal\AccountShow.aspx" />
@@ -107,6 +121,7 @@
     <Content Include="Products.ascx" />
     <Content Include="Register.aspx" />
     <Content Include="Slider.ascx" />
+    <Content Include="uploads\Syarh-Lkzs-Nzyf-Krt-Mwdyl-2010-8df1c00c8ebe89b5ced3a34467066574.jfif" />
     <Content Include="Web.config" />
     <Content Include="WebForm1.aspx" />
   </ItemGroup>

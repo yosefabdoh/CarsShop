@@ -21,7 +21,7 @@ namespace CarsShop
 
             using (SqlConnection conn = new SqlConnection(constring))
             {
-                string sql = "select * from acount_user where user_name =@username and password=@password and user_type_id = 1002";
+                string sql = "select * from acount_user where user_name =@username and password=@password and user_type_id = 3";
                 SqlCommand cmd = new SqlCommand(sql, conn);
                 string EnPassord = FormsAuthentication.HashPasswordForStoringInConfigFile(password, "SHA1");
                 SqlParameter parusername = new SqlParameter("@username", username);
